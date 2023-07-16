@@ -68,7 +68,7 @@ function playRound(playerSelection, computerSelection) {
     }
 
     messageText.textContent = winner;
-    scoreText.textContent = `Score: ${humanScore} - ${compScore}`;
+    scoreText.textContent = `Score: ${humanScore} (You) - ${compScore} (Robot)`;
 
     if ((humanScore == 5) || (compScore == 5)) {
         messageText.textContent = `Game over, you ${humanScore == 5 ? 'win' : 'lose'}!`;
